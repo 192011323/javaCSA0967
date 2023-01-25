@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class hallowsq{
+public static void main(String args[])
+{
+Scanner input=new Scanner(System.in);
+int n=5;
+char c=input.next().charAt(0);
+for(int i=1;i<=n;i++)
+{
+ for(int j=1;j<=n;j++)
+ {
+ if(i==1||j==1||i==n||j==n)
+ System.out.print(c+" ");
+ else
+ System.out.print(" ");
+ }
+ System.out.println();
+}
+}
+}
