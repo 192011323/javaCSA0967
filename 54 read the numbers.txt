@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main {
+ public static void main(String[] args) {
+ Scanner input = new Scanner(System.in);
+ int sumpos = 0,sumneg = 0,num=0;
+ System.out.print("Number of values:");
+ int p=input.nextInt();
+ for(int i=1;i<=p;i++){ 
+ System.out.print("enter the number:- ");
+ num = input.nextInt();
+ if(num>0)
+ sumpos++;
+ else if(num<0)
+ sumneg++;
+ }
+ System.out.println("the no.of.negative values are "+sumneg);
+ System.out.println("the no.of.positive values are "+sumpos);
+ }
+}
